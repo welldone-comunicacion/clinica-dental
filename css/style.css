@@ -1,0 +1,617 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round' !important;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none !important;
+    display: inline-block;
+    transition: 0.4s all ease;
+}
+
+a#scroll-top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    height: 42px;
+    width: 42px;
+    z-index: 9;
+    line-height: 3em;
+    background: #b4b5b3 url("../Images/scroll-top.png") center center no-repeat;
+    transition: all 0.25s ease-in-out;
+    border-radius: 50px;
+    cursor: pointer;
+}
+a#scroll-top:hover {
+    background-color: #8f908e; 
+}
+
+
+
+
+
+
+/* ************* headre top annoucument bar ***********  */
+
+.header-top {
+    background: #60646d;
+    padding: 11px 0;
+}
+.header-top p {
+    color: #bbbfc9;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.7;
+}
+.header-top p span {
+    color: #fefefe;
+}
+
+
+/* ************** header css ************ */
+
+#custom-header {
+    padding: 30px 0;
+}
+.custom-nav-menu .nav-link {
+    width: 100%;
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #60646d;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    transition: 0.4s all ease;
+}
+.custom-nav-menu a.nav-link.active,
+.custom-nav-menu .nav-link:hover {
+    background-color: #b4b5b3;
+    color: #fff;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 250px;
+    height: 100%;
+    transition: 0.3s;
+    z-index: 999;
+}
+.mobile-menu.open {
+    right: 0;
+}
+.mobile-link {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+/* Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 998;
+}
+.body-no-scroll {
+    overflow: hidden;
+}
+
+
+
+/* *********** hero slidre css *********** */
+
+.ca-appointment-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9; 
+}
+.ca-appointment-form {
+    background-color: #b4b5b3;
+    padding: 16px 10px 15px;
+    position: relative;
+    z-index: 99;
+}
+.ca-hero-slider button.slick-prev.slick-arrow {
+    display: block;
+    width: 53px;
+    height: 53px;
+    margin: -27px 0 0;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    background: url(../Images/slider-left-arrow.png) center no-repeat #b4b5b3;
+    border: none;
+    border-radius: 50%;
+}
+.ca-hero-slider:hover button.slick-prev.slick-arrow {
+    opacity: 1;
+    left: 10px;
+}
+.ca-hero-slider button.slick-next.slick-arrow {
+    display: block;
+    width: 53px;
+    height: 53px;
+    margin: -27px 0 0;
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    background: url(../Images/slider-right-arrow.png) center no-repeat #b4b5b3;
+    border: none;
+    border-radius: 50%;
+}
+.ca-hero-slider:hover button.slick-next.slick-arrow {
+    opacity: 1;
+    right: 10px;
+}
+.ca-hero-slider button.slick-prev.slick-arrow:hover,
+.ca-hero-slider button.slick-next.slick-arrow:hover {
+    background-color: #898e99;
+}
+.ca-appointment-form input.form-control, .ca-appointment-form input.form-control:focus {
+    background: none;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    width: 100%;
+    display: inline-block;
+    resize: none;
+    padding: 0px 5px 5px 5px;
+    border-radius: 0;
+    box-shadow: none;
+}
+.ca-appointment-form input::placeholder {
+    color: #fff;
+}
+span.btn.make-appoint {
+    font-size: 15px;
+    background-color: #3a3c41;
+    display: block;
+    text-align: left;
+    position: relative;
+    z-index: 99;
+    padding: 7px 15px;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 600;
+}
+.ca-appointment-form button.btn.btn-primary {
+    font-size: 14px;
+    font-weight: 700;
+    border: 0;
+    padding: 6px 19px;
+    color: #3a3c41;
+    background-color: #fff;
+    border: none;
+    border-image: none;
+    letter-spacing: 0;
+    outline: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    transition: 0.4s all ease;
+}
+.ca-appointment-form button.btn.btn-primary:hover {
+    background-color: #3a3c41;
+    color: #fff;
+}
+span.btn.make-appoint svg {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: #fff;
+    transition: 0.4s all ease;
+}
+span.btn.make-appoint.active svg {
+    transform: rotate(180deg);
+}
+
+
+/* ************** serview section css ************ */
+
+section.our_services {
+    padding: 90px 0 30px;
+}
+h1.our_services-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #3a3c41;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+p.our_services-description {
+    margin: 0;
+    font-size: 14px;
+    color: #7b7d85;
+    line-height: 1.7;
+}
+.row.service_top {
+    margin-bottom: 60px;
+}
+.service-icon img {
+    width: auto;
+    max-width: 70px;
+    height: auto;
+    transition: 0.4s all ease;
+}
+.service-content h5 {
+    margin-bottom: 15px;
+}
+.service-content a {
+    font-size: 18px;
+    color: #3a3c41;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.service-content p {
+    font-size: 14px;
+    color: #b0b1b6;
+    line-height: 1.7;
+    margin: 0;
+}
+.our_service-item_block {
+    margin-bottom: 55px;
+}
+.our_service-item:hover img {
+    -webkit-transform: rotatey(180deg);
+    -moz-transform: rotatey(180deg);
+    -o-transform: rotatey(180deg);
+    transform: rotatey(180deg);
+}
+
+/* ************ our specialists section css ************ */
+
+section.our_specialists {
+    padding: 70px 0 80px;
+}
+.specialist-content h5 a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3a3c41;
+    line-height: 1.1;
+}
+figure.specialist-img {
+    margin: 0;
+}
+.specialist-content {
+    padding: 20px 0;
+}
+.specialist-content p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 1.7;
+    color: #7b7d85;
+}
+a.specialist-read-more {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #b4b5b3;
+    padding: 10px 20px;
+    color: #fff !important;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.our_specialists-header h2 {
+    font-size: 30px;
+    color: #3a3c41;
+    margin-bottom: 50px;
+    line-height: 1.1;
+}
+
+
+/* ************** our testimonial slider css ***********  */
+
+section.our_testimonial.home-testimonial {
+    padding: 80px 0;
+    background: #FBFBFB;
+}
+.our_testimonial .testimonial-slider img {
+    margin: 0 auto 36px;
+    max-width: 130px;
+}
+.our_testimonial blockquote p {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #6a7177;
+    margin: 0 0 50px;
+}
+.our_testimonial .testimonial-footer h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3a3c41;
+    line-height: 1;
+}
+.our_testimonial .for-border {
+    width: 60px;
+    height: 2px;
+    background: #333;
+    margin: 10px auto 0;
+}
+.slick-slide {
+    outline: none;
+}
+h2.our_testimonial_heading {
+    font-size: 30px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    color: #3a3c41;
+}
+.our_testimonial .for-border {
+    margin: 0 0 10px;
+    height: 11px;
+    width: 100%;
+    background: transparent url(../Images/feature-border.png) center center no-repeat;
+    border: none;
+}
+.testimonial-slider button.slick-prev {
+    top: 86px;
+    width: 14px;
+    height: 17px;
+    font-size: 0;
+    -webkit-transition: none 0;
+    transition: none 0;
+    left: 42%;
+    opacity: 1;
+    background: url("../Images/prev-icon-two-sprite.png") 0px 0px no-repeat;
+    display: block;
+    margin: -27px 0 0;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 50%;
+    border: none;
+}
+.testimonial-slider button.slick-next {
+    top: 86px;
+    width: 14px;
+    height: 17px;
+    font-size: 0;
+    -webkit-transition: none 0;
+    transition: none 0;
+    right: 42%;
+    opacity: 1;
+    background: url("../Images/next-icon-two-sprite.png") 0px 0px no-repeat;
+    display: block;
+    margin: -27px 0 0;
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 50%;
+    border: none;
+}
+.testimonial-slider button.slick-prev:hover,
+.testimonial-slider button.slick-next:hover {
+    background-position: 0px -37px;
+}
+
+
+/* *********** footer css *********** */
+
+footer#main-footer {
+    background-color: #3a3c41;
+    padding: 100px 0 30px 0;
+    color: #9ba0aa;
+    line-height: 24px;
+    overflow: hidden;
+}
+.footer_section h3.title {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.footer-links h5 {
+    margin: 10px 0;
+}
+.footer-links h5 span, .footer-links h5 a {
+    color: #9fa4af;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+}
+.footer-social a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.footer-bottom {
+    margin-top: 60px;
+    border-top: 1px solid #4a4c52;
+    padding-top: 26px;
+}
+p.copyright_text {
+    font-size: 14px;
+    color: #7a7d86;
+    line-height: 1.7;
+}
+ 
+/* =========================================
+************* respinsive media *************
+============================================
+ */
+
+@media (max-width: 1199px) {
+    .site-logo {
+        max-width: 200px;
+    }
+    .our_service-item {
+        gap: 15px;
+    }
+    section.our_testimonial.home-testimonial {
+        padding: 50px 0;
+        background: #FBFBFB;
+    }
+    .testimonial-slider button.slick-prev {
+        left: 39%;
+    }
+    .testimonial-slider button.slick-next {
+        right: 39%;
+    }
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+    }
+    footer#main-footer {
+        padding: 60px 0 30px 0;
+    }
+}
+
+@media (max-width: 991px) {
+    #custom-header {
+        padding: 15px 0;
+    }
+    .header-top-inn{
+        flex-wrap: wrap;
+    }
+    form.ca-appointment-form {
+        display: none;
+    }
+    .ca-hero-slider button.slick-prev.slick-arrow {
+        opacity: 1;
+        left: 10px;
+        background-size: 8px;
+        background-color: #898e99;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        transform: translateY(-50%);
+    }
+    .ca-hero-slider button.slick-next.slick-arrow {
+        opacity: 1;
+        right: 10px;
+        background-size: 8px;
+        background-color: #898e99;
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        transform: translateY(-50%);
+    }
+    form.ca-appointment-form {
+        display: block;
+    }
+    section.our_services {
+        padding: 30px 0 30px;
+    }
+    .our_service-item_block {
+        margin-bottom: 30px;
+    }
+    .our_specialists-header h2 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .specialist-card-item {
+        margin: 0;
+    }
+    .our_specialists-list {
+        row-gap: 20px;
+    }
+    .testimonial-slider button.slick-prev {
+        left: 36%;
+    }
+    .testimonial-slider button.slick-next {
+        right: 36%;
+    }
+    .footer_inner {
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ca-appointment-wrapper {
+        position: unset;
+        margin-top: 30px;
+    }
+    .site-logo {
+        max-width: 150px;
+    }
+    .testimonial-slider button.slick-prev {
+        left: 30%;
+    }
+    .testimonial-slider button.slick-next {
+        right: 30%;
+    }
+    section.our_specialists {
+        padding: 40px 0 40px;
+    }
+    .footer-bottom {
+        margin-top: 0px;
+        border-top: 1px solid #4a4c52;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .our_service-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .our_testimonial blockquote p {
+        margin: 0 0 30px;
+    }
+    p.copyright_text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .testimonial-slider button.slick-prev {
+        left: 15%;
+    }
+    .testimonial-slider button.slick-next {
+        right: 15%;
+    }
+}
