@@ -30,7 +30,7 @@ a#scroll-top {
     width: 42px;
     z-index: 9;
     line-height: 3em;
-    background: #b4b5b3 url("../Images/scroll-top.png") center center no-repeat;
+    background: #b4b5b3 url("../images/scroll-top.png") center center no-repeat;
     transition: all 0.25s ease-in-out;
     border-radius: 50px;
     cursor: pointer;
@@ -150,7 +150,7 @@ a#scroll-top:hover {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../Images/slider-left-arrow.png) center no-repeat #b4b5b3;
+    background: url(../images/slider-left-arrow.png) center no-repeat #b4b5b3;
     border: none;
     border-radius: 50%;
 }
@@ -174,7 +174,7 @@ a#scroll-top:hover {
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
-    background: url(../Images/slider-right-arrow.png) center no-repeat #b4b5b3;
+    background: url(../images/slider-right-arrow.png) center no-repeat #b4b5b3;
     border: none;
     border-radius: 50%;
 }
@@ -382,7 +382,7 @@ h2.our_testimonial_heading {
     margin: 0 0 10px;
     height: 11px;
     width: 100%;
-    background: transparent url(../Images/feature-border.png) center center no-repeat;
+    background: transparent url(../images/feature-border.png) center center no-repeat;
     border: none;
 }
 .testimonial-slider button.slick-prev {
@@ -394,7 +394,7 @@ h2.our_testimonial_heading {
     transition: none 0;
     left: 42%;
     opacity: 1;
-    background: url("../Images/prev-icon-two-sprite.png") 0px 0px no-repeat;
+    background: url("../images/prev-icon-two-sprite.png") 0px 0px no-repeat;
     display: block;
     margin: -27px 0 0;
     position: absolute;
@@ -417,7 +417,7 @@ h2.our_testimonial_heading {
     transition: none 0;
     right: 42%;
     opacity: 1;
-    background: url("../Images/next-icon-two-sprite.png") 0px 0px no-repeat;
+    background: url("../images/next-icon-two-sprite.png") 0px 0px no-repeat;
     display: block;
     margin: -27px 0 0;
     position: absolute;
